@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import "../../App.css";
 
 const ToDoContainer = ({ items, done, setDone }) => {
@@ -11,8 +10,9 @@ const ToDoContainer = ({ items, done, setDone }) => {
     <div>
       {items.map((item) => (
         <div
+          key={id}
           className="todo-container_item"
-          style={{ color: { done } ? `green` : `red` }}
+          style={{ color: done ? `green` : `red` }}
         >
           {item + "  "}
           <button onClick={handleClick}>Done ✅</button>

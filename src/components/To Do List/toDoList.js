@@ -22,7 +22,7 @@ const ToDoList = () => {
   return (
     <div>
       <h1>To Do List</h1>
-      <ToDoInput />
+      <ToDoInput items={items} setItems={setItems} />
       <ToDoContainer items={items} done={done} setDone={setDone} />
     </div>
   );
