@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.todo-container_item_active {
+  color: green;
+}
+
+.todo-container_item_inactive {
+  color: red;
+  text-decoration: line-through;
+}
